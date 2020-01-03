@@ -1,0 +1,22 @@
+
+.important {
+    font-weight: bold;
+}
+
+.important span,
+.notImportant span {
+    margin-right: 10px;
+}
+
+.delete {
+    margin-left: 50px;
+}
+
+.done {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.notDone {
+    cursor: pointer;
+}
