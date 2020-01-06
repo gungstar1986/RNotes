@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed4eb14-20ec-4dc5-89ca-9efe1bd77f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNoteContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Header/HeaderContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/Search/SearchContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Index.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/CustomElements/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/CustomElements/Div.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/CustomElements/Input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Filter/withFilter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Search/Search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Search/Search.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Validate/Validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNoteContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNoteContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Search/SearchContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Search/SearchContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Component/TodoList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Component/AddNote" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -53,8 +57,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\IT\RNotes\rnotes\src\Component\TodoList" />
       <recent name="C:\IT\RNotes\rnotes\src\Component\AddNote" />
+      <recent name="C:\IT\RNotes\rnotes\src\Component\Search" />
+      <recent name="C:\IT\RNotes\rnotes\src\Component\CustomElements" />
+      <recent name="C:\IT\RNotes\rnotes\src" />
       <recent name="C:\IT\RNotes\rnotes\src\Component\Header" />
     </key>
   </component>
@@ -100,7 +106,8 @@
       <workItem from="1578050115273" duration="1346000" />
       <workItem from="1578052416711" duration="393000" />
       <workItem from="1578053076760" duration="1097000" />
-      <workItem from="1578058945419" duration="24356000" />
+      <workItem from="1578058945419" duration="24963000" />
+      <workItem from="1578211115526" duration="64033000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,24 @@
+.headerContainer {
+    background: #155724;
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: Broadway, sans-serif;
+}
+
+.logo h3 {
+    color: aliceblue;
+    padding-top: 3px;
+    margin-bottom: -5px;
+}
+
+.activities {
+    font-size: 12pt;
+    padding-top: 11px;
+    float: right;
+    color: aliceblue;
+    margin-bottom: -5px;
+}

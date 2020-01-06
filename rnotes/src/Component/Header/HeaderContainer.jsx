@@ -1,10 +1,18 @@
 import React from "react";
+import Header from "./Header";
+import {connect} from "react-redux";
 
 const HeaderContainer = (props) => {
+
     return (
         <div>
-            <h3>R.Notes <span>do</span></h3>
+            <Header {...props}/>
         </div>
     )
 };
-export default HeaderContainer
+const mapStateToProps = state => {
+    return {
+        list: state.todoList.list
+    }
+}
+export default connect(mapStateToProps)(HeaderContainer)

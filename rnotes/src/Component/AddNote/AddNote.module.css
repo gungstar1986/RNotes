@@ -1,0 +1,60 @@
+
+.formInput {
+    padding: 2px;
+    margin: 5px 5px;
+    border-color: #007bff;
+    border-radius: .25rem;
+    height: 39px;
+    width: 300px;
+    bottom: 3px;
+}
+
+.button {
+    position: absolute;
+    bottom: 5px;
+    left: 320px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: 2px solid #007bff;
+    background: #007bff;
+    color: antiquewhite;
+}
+
+.buttonDisabled {
+    position: absolute;
+    bottom: 5px;
+    left: 320px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: 2px solid #989bff;
+    background: #989bff;
+    color: #b6b9b1;
+}
+
+.button:hover {
+    background: #0549ff;
+    border: 2px solid #0549ff;
+    transition: 0.5s;
+}
+
+.errorContainer {
+    background: #A66800;
+    width: 100%;
+    position: relative;
+}
+.error {
+    background: #7f4395;
+}
+
+
+

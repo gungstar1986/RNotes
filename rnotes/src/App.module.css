@@ -1,0 +1,45 @@
+.appContainer {
+    /*background: #f9c6bc;*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.8%;;
+}
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+.addContainer {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 2px solid #155724;
+    border-right: 2px solid #155724;
+    border-left: 2px solid #155724;
+}
+.app {
+    width: 800px;
+    height: 600px;
+    background: #e2e2e2;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-left: 2px solid #155724;
+    border-right: 2px solid #155724;
+    border-bottom: 2px solid #155724;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: auto
+}
+.app:focus {
+
+}
+.noteList {
+    margin: 5px 0;
+    height: auto;
+    background: #7f4395;
+}
