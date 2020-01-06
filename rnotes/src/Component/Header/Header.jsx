@@ -8,7 +8,7 @@ const Header = (props) => {
     return (
         <header className={classes.headerContainer}>
             <div className={classes.logo}><h3>React Notes</h3></div>
-            <div className={classes.activities}>Всего: {props.list.length}, Выполнено: {unDone}, Осталось: {done} </div>
+            <div className={classes.activities}>Все: {props.list.length},  Активные: {unDone}, Готовые: {done} </div>
         </header>
     )
 };

@@ -1,18 +1,17 @@
-
 .formInput {
     padding: 2px;
     margin: 5px 5px;
     border-color: #007bff;
     border-radius: .25rem;
     height: 39px;
-    width: 300px;
+    width: 430px;
     bottom: 3px;
 }
 
 .button {
     position: absolute;
     bottom: 5px;
-    left: 320px;
+    left: 450px;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
@@ -28,7 +27,7 @@
 .buttonDisabled {
     position: absolute;
     bottom: 5px;
-    left: 320px;
+    left: 450px;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
@@ -55,6 +54,34 @@
 .error {
     background: #7f4395;
 }
+
+.clear {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: .25rem;
+    border: 2px solid #ff0f00;
+    background: #ff0f00;
+    color: antiquewhite;
+    height: 40px;
+    width: 100px;
+}
+.clear:hover {
+    background: #7d0c00;
+    border: 2px solid #7d0c00;
+    transition: 0.5s;
+}
+
+.formContainer {
+    display: flex;
+    position: relative;
+}
+
 
 
 

@@ -4,6 +4,7 @@ const SET_IMPORTANT_LABEL = "SET_IMPORTANT_LABEL";
 const SET_DONE_LABEL = "SET_DONE_LABEL";
 const SEARCH_NOTES = "SEARCH_NOTES";
 const SET_FILTERED_NOTES = "SET_FILTERED_NOTES";
+const CLEAR_TODO_LIST = "CLEAR_TODO_LIST"
 
 
 let id = 0;
@@ -60,6 +61,12 @@ const todolistReducer = (state = initialState, action) => {
             filtered: action.status
         }
     }
+    if (action.type === CLEAR_TODO_LIST) {
+        return {
+            ...state,
+            list: []
+        }
+    }
     return state
 };
 
@@ -70,5 +77,6 @@ export const setImportantLabel = (boolean, id) => ({type: "SET_IMPORTANT_LABEL",
 export const setDoneLabel = (id, boolean) => ({type: "SET_DONE_LABEL", id, boolean});
 export const setFilter = (status) => ({type: "SET_FILTERED_NOTES", status});
 export const liveSearch = (text) => ({type: "SEARCH_NOTES", text});
+export const clearTodoList = () => ({type: "CLEAR_TODO_LIST"});
 
 export default todolistReducer
