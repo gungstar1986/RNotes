@@ -4,20 +4,19 @@ const SET_IMPORTANT_LABEL = "SET_IMPORTANT_LABEL";
 const SET_DONE_LABEL = "SET_DONE_LABEL";
 const SEARCH_NOTES = "SEARCH_NOTES";
 const SET_FILTERED_NOTES = "SET_FILTERED_NOTES";
-const CLEAR_TODO_LIST = "CLEAR_TODO_LIST"
-
+const CLEAR_TODO_LIST = "CLEAR_TODO_LIST";
+const EDIT_LABEL_ITEM = "EDIT_LABEL_ITEM";
+const EDIT_MODE_ON = "EDIT_MODE_ON";
+const EDITED_NOTE = "EDITED_NOTE";
 
 let id = 0;
 const initialState = {
     list: [
-        {id: ++id, label: 'Добавьте Вашу первую заметку', important: false, done: true},
-        {id: ++id, label: 'Добавьте  первую заметку', important: true, done: false},
-        {id: ++id, label: 'Добавьте Вашу  заметку', important: false, done: false},
-        {id: ++id, label: 'Доб Вашу первую заметку', important: false, done: false},
-        {id: ++id, label: 'Добавьте Вашу первую ', important: false, done: false},
+        {id: ++id, label: 'Это Ваша первая заметка, добавьте еще одну в поле ниже', important: true, done: false, edit: false},
     ],
     filtered: "all",
     search: "",
+    tempText: ""
 };
 
 const todolistReducer = (state = initialState, action) => {
@@ -67,12 +66,37 @@ const todolistReducer = (state = initialState, action) => {
             list: []
         }
     }
+    if (action.type === EDIT_LABEL_ITEM) {
+        return {
+            ...state,
+            list: state.list.map(elem => elem.id === action.id
+                ? {...elem, edit: action.boolean}
+                : elem)
+        }
+    }
+    if (action.type === EDIT_MODE_ON) {
+        return {
+            ...state,
+            tempText: action.text
+        }
+    }
+    if (action.type === EDITED_NOTE) {
+        return {
+            ...state,
+            list: state.list.map(item => item.id === action.id
+                ? {...item, label: action.text, edit: false}
+                : item)
+        }
+    }
     return state
 };
 
 
 export const addLabel = (label) => ({type: "ADD_LABEL_ITEM", label});
 export const deleteLabel = (id) => ({type: "DELETE_LABEL_ITEM", id});
+export const editLabel = (id, boolean) => ({type: "EDIT_LABEL_ITEM", id, boolean});
+export const editModeOn = (text) => ({type: "EDIT_MODE_ON", text});
+export const editedMode = (text, id) => ({type: "EDITED_NOTE", text, id});
 export const setImportantLabel = (boolean, id) => ({type: "SET_IMPORTANT_LABEL", boolean, id});
 export const setDoneLabel = (id, boolean) => ({type: "SET_DONE_LABEL", id, boolean});
 export const setFilter = (status) => ({type: "SET_FILTERED_NOTES", status});

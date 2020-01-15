@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed4eb14-20ec-4dc5-89ca-9efe1bd77f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/CustomElements/ClearButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNote.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Img/logo2x-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/CustomElements/ClearButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/CustomElements/Div.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Component/CustomElements" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Component/TodoList" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -41,11 +46,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IT\RNotes\rnotes\src\Component\TodoList" />
       <recent name="C:\IT\RNotes\rnotes\src\Component\CustomElements" />
       <recent name="C:\IT\RNotes\rnotes\public" />
       <recent name="C:\IT\RNotes\rnotes\src\Component\AddNote" />
       <recent name="C:\IT\RNotes\rnotes\src\Component\Search" />
-      <recent name="C:\IT\RNotes\rnotes\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -108,6 +113,8 @@
       <workItem from="1578302723892" duration="15000" />
       <workItem from="1578307323767" duration="572000" />
       <workItem from="1578307942363" duration="3903000" />
+      <workItem from="1579016809388" duration="23395000" />
+      <workItem from="1579073858207" duration="6532000" />
     </task>
     <servers />
   </component>

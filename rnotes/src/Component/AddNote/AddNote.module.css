@@ -51,18 +51,18 @@
     width: 100%;
     position: relative;
 }
+
 .error {
     background: #7f4395;
 }
 
 .clear {
-    display: inline;
+    display: inline-block;
     position: absolute;
     right: 15px;
     top: 4px;
     font-weight: 400;
     text-align: center;
-    vertical-align: middle;
     cursor: pointer;
     border-radius: .25rem;
     border: 2px solid #ff0f00;
@@ -70,7 +70,10 @@
     color: antiquewhite;
     height: 40px;
     width: 100px;
+    font-size: 13px;
+    padding-top: 0px;
 }
+
 .clear:hover {
     background: #7d0c00;
     border: 2px solid #7d0c00;

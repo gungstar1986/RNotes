@@ -1,47 +1,84 @@
 import React from 'react'
 import classes from "./Todolist.module.css"
+import del from "../../Img/recycle.png"
+import important from "../../Img/important.png"
+import edit from "../../Img/edit.png"
 
 
-export default class TodoList extends React.Component {
-    markAsDone = (id, bool) => this.props.setDoneLabel(id, bool);
-    setImportant = (bool, id) => this.props.setImportantLabel(bool, id);
-    delNote = (id) => this.props.deleteLabel(id);
 
-    render() {
-        const {list} = this.props;
-        const todoList = list.map(item => item.important
-            ? <div className={classes.container}>
-                <div className={classes.important} key={item.id}> {
-                    item.done
-                        ? <div className={classes.done}
-                                onClick={() => this.markAsDone(item.id, false)}>{item.label}
-                            </div>
-                        : <div className={classes.notDone}
-                                onClick={() => this.markAsDone(item.id, true)}>{item.label}</div>
-                }
+
+const TodoList = props => {
+
+    const {list, tempText} = props;
+    const setEditMode = (id, bool, text) => {
+        props.editLabel(id, bool);
+        props.editModeOn(text)
+    };
+    const newTextNote = (e) => {
+        props.editModeOn(e.target.value)
+    };
+    const markAsDone = (id, bool) => props.setDoneLabel(id, bool);
+    const setImportant = (id, bool) => props.setImportantLabel(id, bool);
+    const setEditedNote = (id) => {
+        props.editedMode(tempText, id)
+    };
+    const delNote = (id) => props.deleteLabel(id);
+
+    const todoList = list.map((item, id) => {
+        if (item.edit) {
+            return <div key={id} className={classes.container}>
+                <div className={classes.important}>
+                    <div className={classes.editArea}><input type="text"
+                                                             onChange={newTextNote}
+                                                             value={tempText}
+                                                             onBlur={() => setEditedNote(item.id)}
+                                                             autoFocus={true}/></div>
                     <div className={classes.buttons}>
-                        <button className={"btn btn-danger"} onClick={() => this.delNote(item.id)}>Удалить</button>
-                        <button className={classes.buttImport} onClick={() => this.setImportant(false, item.id)}>Неважно</button>
+                        <div className={classes.editNoteDiv}><img src={edit} alt=""/></div>
+                        <button className={classes.deleteNote} onClick={() => delNote(item.id)}><img src={del} alt=""/>
+                        </button>
+                        <button className={classes.buttImport} onClick={() => setImportant(false, item.id)}><img
+                            src={important} alt=""/></button>
                     </div>
                 </div>
             </div>
-            : <div className={classes.container} key={item.id}> {
-                item.done
-                    ? <span className={classes.done} onClick={() => this.markAsDone(item.id, false)}>{item.label}</span>
-                    :
-                    <span className={classes.notDone} onClick={() => this.markAsDone(item.id, true)}>{item.label}</span>
-            }
+        }
+        if (!item.important) {
+            return <div className={classes.container} key={id}>
+                <span className={item.done ? classes.done : classes.notDone}
+                      onClick={() => markAsDone(item.id, !item.done)}>{item.label}</span>
                 <div className={classes.buttons}>
-                    <button className={"btn btn-danger"} onClick={() => this.delNote(item.id)}>Удалить</button>
-                    <button className={classes.buttImport} onClick={() => this.setImportant(true, item.id)}>Важно
+                    <button className={classes.editNote} onClick={() => setEditMode(item.id, true, item.label)}><img
+                        src={edit} alt=""/></button>
+                    <button className={classes.deleteNote} onClick={() => delNote(item.id)}><img src={del} alt=""/>
                     </button>
+                    <button className={classes.buttImport} onClick={() => setImportant(true, item.id)}><img
+                        src={important} alt=""/></button>
                 </div>
-            </div>);
-
-        return <div>{todoList}</div>
-    }
-
+            </div>
+        }
+        if (item.important) {
+            return <div key={id} className={classes.container}>
+                <div className={classes.important}>
+                    <div className={item.done ? classes.done : classes.notDone}
+                         onClick={() => markAsDone(item.id, !item.done)}>{item.label}</div>
+                    <div className={classes.buttons}>
+                        <button className={classes.editNote}
+                                onClick={() => setEditMode(item.id, !item.edit, item.label)}><img src={edit} alt=""/>
+                        </button>
+                        <button className={classes.deleteNote} onClick={() => delNote(item.id)}><img src={del} alt=""/>
+                        </button>
+                        <button className={classes.buttImport} onClick={() => setImportant(false, item.id)}><img
+                            src={important} alt=""/></button>
+                    </div>
+                </div>
+            </div>
+        }
+    });
+    return <div>{todoList}</div>
 };
+
+export default TodoList;
 
 
 
