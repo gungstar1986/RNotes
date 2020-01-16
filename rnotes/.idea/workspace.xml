@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed4eb14-20ec-4dc5-89ca-9efe1bd77f03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNote.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNote.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/CustomElements/ClearButton.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/CustomElements/Div.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/AddNote/AddNoteContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/AddNote/AddNoteContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/Todolist.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/TodoList/TodolistContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/todolist-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +118,8 @@
       <workItem from="1578307323767" duration="572000" />
       <workItem from="1578307942363" duration="3903000" />
       <workItem from="1579016809388" duration="23395000" />
-      <workItem from="1579073858207" duration="6532000" />
+      <workItem from="1579073858207" duration="7399000" />
+      <workItem from="1579162343957" duration="35070000" />
     </task>
     <servers />
   </component>

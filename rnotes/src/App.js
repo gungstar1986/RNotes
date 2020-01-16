@@ -9,13 +9,11 @@ import classes from "./App.module.css"
 const App = () => {
     return (
         <div className={classes.appContainer}>
-
             <div className={classes.headerContainer}>
                 <div><HeaderContainer/></div>
                 <div><SearchContainer/></div>
             </div>
             <div className={classes.app}>
-
                 <div className={classes.noteList}>
                     <TodoListContainer/>
                 </div>
@@ -23,7 +21,6 @@ const App = () => {
             <div className={classes.addContainer}>
                 <AddNoteContainer/>
             </div>
-
         </div>
     );
 };

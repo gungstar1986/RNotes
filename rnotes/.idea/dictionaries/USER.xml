@@ -2,6 +2,7 @@
   <dictionary name="USER">
     <words>
       <w>addnote</w>
+      <w>axios</w>
       <w>todolist</w>
     </words>
   </dictionary>

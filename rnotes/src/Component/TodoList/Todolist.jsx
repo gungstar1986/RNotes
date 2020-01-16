@@ -6,10 +6,10 @@ import edit from "../../Img/edit.png"
 
 
 
-
 const TodoList = props => {
 
     const {list, tempText} = props;
+
     const setEditMode = (id, bool, text) => {
         props.editLabel(id, bool);
         props.editModeOn(text)
@@ -17,12 +17,12 @@ const TodoList = props => {
     const newTextNote = (e) => {
         props.editModeOn(e.target.value)
     };
-    const markAsDone = (id, bool) => props.setDoneLabel(id, bool);
-    const setImportant = (id, bool) => props.setImportantLabel(id, bool);
+    const markAsDone = (id, bool) => props.setDoneNote(id, bool);
+    const setImportant = (id, bool) => props.markAsImportant(id, bool);
     const setEditedNote = (id) => {
-        props.editedMode(tempText, id)
+        props.editNote(tempText, id)
     };
-    const delNote = (id) => props.deleteLabel(id);
+    const delNote = (id) => props.deleteItemFromServer(id);
 
     const todoList = list.map((item, id) => {
         if (item.edit) {

@@ -1,7 +1,7 @@
 import React from "react";
 import AddNote from "./AddNote";
 import {connect} from "react-redux";
-import {addLabel} from "../../Redux/todolist-reducer";
+import {deleteAllNotes, postDataToTheServer} from "../../Redux/todolist-reducer";
 
 
 const AddNoteContainer = props => {
@@ -11,8 +11,14 @@ const AddNoteContainer = props => {
         </div>
     )
 };
+
+const mapStateToProps = state => ({
+    list: state.todoList.list,
+    notes: state.todoList.list.length
+});
 const mapDispatchToProps = {
-    addLabel,
+    postDataToTheServer,
+    deleteAllNotes
 }
-export default connect(null, mapDispatchToProps)(AddNoteContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(AddNoteContainer)
 

@@ -1,18 +1,22 @@
 import React from 'react'
 import {connect} from "react-redux";
 import {
+    deleteItemFromServer,
     deleteLabel,
-    editedMode,
+    editNote,
     editLabel,
-    editModeOn,
-    setDoneLabel,
-    setImportantLabel
+    editModeOn, getDataFromServer,
+    setDoneNote,
+    markAsImportant
 } from "../../Redux/todolist-reducer";
 import TodoList from "./Todolist";
 import withFilter from "../Filter/withFilter";
 
 
 class TodoListContainer extends React.Component {
+    componentDidMount() {
+        this.props.getDataFromServer()
+    }
 
     render() {
         return (
@@ -33,10 +37,12 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = {
     deleteLabel,
-    setImportantLabel,
-    setDoneLabel,
+    markAsImportant,
+    setDoneNote,
     editLabel,
     editModeOn,
-    editedMode
+    editNote,
+    getDataFromServer,
+    deleteItemFromServer,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(withFilter(TodoListContainer))
